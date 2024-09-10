@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            }
+        body {
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1920px;
+            min-height: 1000px;
+            background: rgb(224, 200, 172);
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .container .right_Side,
+        .container .left_Side {
+            position: relative;
+            background-color: white;
+            padding: 40px;
+            display: flex;
+        }
+        .container .middle_Side {
+            position: relative;
+            background-color: white;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .middle_Side .mukha {
+            box-shadow: 0 10px 35px rgba(0,0,0,1);
+            border: 7px solid orange;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .middle_Side .mukha img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .logo {
+            display: flex;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        .logo img {
+            margin-right: 10px;
+        }
+        .right_Side .cv{
+            padding-left: 100px;
+        }
+        .right_Side .cv a{
+            text-decoration:none;
+            font-weight: bold; 
+            color: black; 
+            margin-top: 125px;
+            padding-bottom: 5px;
+            display: block;
+            border-bottom: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left_Side">
+            <div class="logo">
+                <img style="display: flex; width: 75px; height: 75px; object-fit: cover;" src="bulsu_logo.png" />
+                <h3 style="margin-top: 18px;  letter-spacing: 1.5px; color: black;">Bulacan State University<br>Malolos City, Bulacan</h3>
+            </div>
+            
+        </div>
+        <div class="middle_Side">
+            <div class="mukha">
+                <img src="picturenizyto.JPEG" />
+            </div>
+        </div>
+        <div class="right_Side">
+            <div class="cv">
+            <a href="Zy.html">Curriculum Vitae</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

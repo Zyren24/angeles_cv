@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            CV Angeles
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            @import URL('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            body {
+                background: white;
+                display: flex;
+                justify-content: center;
+                min-height: 100vh;
+            }
+
+            .text {
+                display: inline-block;
+                line-height: 1.5;
+            }
+
+            .container {
+                position: relative;
+                width: 100%;
+                max-width: 1100px;
+                min-height: 1400px;
+                background: white;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                box-shadow: 0 35px 55px rgba(0,0,0,1);
+                overflow: hidden;
+            }
+
+            .container .right_Side {
+                position: relative;
+                background-color: orange;
+                padding: 40px;
+                z-index: 1;
+            }
+
+            .profileText {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 20px;
+            }
+
+            .profileText .imgBx {
+                position: relative;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            .profileText .imgBx img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .profileText h2 {
+                color: white;
+                font-size: 2.3em;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .contactInfo {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .contact {
+                color: black;
+                text-transform: uppercase;
+                font-size: large;
+                letter-spacing: 1.2px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .contactInfo span {
+                color: white;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .socialMedia {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .social {
+                color: black;
+                text-transform: uppercase;
+                font-size: large;
+                letter-spacing: 1.2px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .socialMedia span {
+                color: white;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .hobbies {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .hobby {
+                color: black;
+                text-transform: uppercase;
+                font-size: large;
+                letter-spacing: 1.2px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .hobbies span {
+                color: white;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .icon i {
+                font-size: 24px;
+            }
+
+            .container .left_Side {
+                position: relative;
+                background-color: white;
+                padding: 40px;
+            }
+
+            .container .left_Side .building {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .profile1 {
+                padding-top: 260px;
+                text-align: center;
+            }
+
+            .prof1 {
+                color: white;
+                text-transform: uppercase;
+                font-size: large;
+                letter-spacing: 1.2px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .profile1 span {
+                color: black;
+                display: block;
+                text-align: justify;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 10px;
+            }
+
+            .profile2 {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .prof2 {
+                color: white;
+                text-transform: uppercase;
+                font-size: large;
+                letter-spacing: 1.2px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .experience {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .exp {
+                color: white;
+                text-transform: uppercase;
+                font-size: large;
+                letter-spacing: 1.2px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .experience span {
+                color: black;
+                display: block;
+                text-align: justify;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 10px;
+            }
+
+            .expertise {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .expert {
+                color: white;
+                text-transform: uppercase;
+                font-size: large;
+                letter-spacing: 1.2px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .table-cell {
+                text-align: left;
+                padding: 5px 20px;
+                width: 300px;
+            }
+            .home {
+            padding-top: 40px;
+            }
+            .home a {
+            font-size: xx-large;
+            text-decoration: none;
+            font-weight: bold; 
+            color: black; 
+            margin-top: 20px;
+            padding-bottom: 5px;
+            padding-right: 20px;
+            border-bottom: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="home">
+            <a href="home.html">Home</a>
+        </div>
+        <div class="container">
+            <div class="left_Side">
+                <div class="building"><img src="buildinglegit.jpeg" width="800" height="250" alt="Building Image" /></div>
+                <div class="profile1">
+                    <h3 class="prof1">
+                        <table style="background-color: orange; width: 650px;">
+                            <tr>
+                                <td style="padding: 5px">PROFILE</td>
+                            </tr>
+                        </table>
+                    </h3>
+                    <span class="text">I am a dedicated student currently pursuing a Bachelor of Science in Information Technology at Bulacan State University. As a 3rd-year student specializing in Business Analytics, I am passionate about learning and exploring various aspects of technology. I am particularly enthusiastic about coding and data, and I am always eager to expand my knowledge and skills in these areas.<br></span>      
+                </div>
+                <div class="profile2">
+                    <h3 class="prof2">
+                        <table style="background-color: orange; width: 650px;">
+                            <tr>
+                                <td style="padding: 5px">PROFILE</td>
+                            </tr>
+                        </table>
+                    </h3>
+                    <table style="border-collapse: collapse;">
+                        <tr>
+                            <td colspan="2" style="padding: 10px 30px;">2016</td>
+                            <td style="text-align: left; padding: 5px; line-height: 1.5;"><b>St. Martin De Porres Catholic School</b><br>Elementary School</td>
+                        </tr>
+                    </table>
+                    <table style="border-collapse: collapse;">
+                        <tr>
+                            <td colspan="2" style="padding: 10px 30px;">2020</td>
+                            <td style="text-align: left; padding: 5px; line-height: 1.5;"><b>Dr. Yanga's Colleges Inc.</b><br>High School</td>
+                        </tr>
+                    </table>
+                    <table style="border-collapse: collapse;">
+                        <tr>
+                            <td colspan="2" style="padding: 10px 30px;">2022</td>
+                            <td style="text-align: left; padding: 5px; line-height: 1.5;"><b>Dr. Yanga's Colleges Inc.</b><br>Senior High School</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="experience">
+                    <h3 class="exp">
+                        <table style="background-color: orange; width: 650px;">
+                            <tr>
+                                <td style="padding: 5px">EXPERIENCE</td>
+                            </tr>
+                        </table>
+                    </h3>
+                    <span class="text">As a student in the Bachelor of Science in Information Technology program at Bulacan State University, I am focused on building my skills through coursework and personal projects. While I lack formal professional experience, I am actively learning about coding, data analysis, and business analytics and am eager to apply my knowledge in future opportunities.<br></span>      
+                </div>
+
+                <div class="expertise">
+                    <h3 class="expert">
+                        <table style="background-color: orange; width: 650px;">
+                            <tr>
+                                <td style="padding: 5px">EXPERTISE</td>
+                            </tr>
+                        </table>
+                    </h3>
+                    <table>
+                        <tr>
+                            <td class="table-cell">Data Analysis</td>
+                            <td class="table-cell">Database Management</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">HTML/CSS</td>
+                            <td class="table-cell">Java</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">SQL</td>
+                            <td class="table-cell">C++</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="right_Side">
+                <div class="profileText">
+                    <div class="imgBx">
+                        <img src="1x1.JPG" height="250" width="250">
+                    </div>
+                    <h2>Kyle Zyren <br> Angeles</h2>
+                </div>   
+                <div class="contactInfo">
+                    <h3 class="contact">
+                        <table style="background-color: white; width: 300px;">
+                            <tr>
+                                <td style="padding: 5px">CONTACT</td>
+                            </tr>
+                        </table>
+                    </h3>
+                    <span class="text">Kyle Zyren Angeles<br></span>
+                    <span class="text">+63 912 9001 334<br></span>
+                    <span class="text">Blk3 Lot45 Server St. CyberVillage<br></span>
+                    <span class="text">Tikay Malolos, Bulacan<br></span>
+                    <span class="text">www.kyleangeles.com<br></span>           
+                </div>
+
+                <div class="socialMedia">
+                    <h3 class="social">
+                        <table style="background-color: white; width: 300px;">
+                            <tr>
+                                <td style="padding: 5px">SOCIAL MEDIA</td>
+                            </tr>
+                        </table>
+                    </h3>
+                    <span class="text">fb.com/kyleangeles<br></span>
+                    <span class="text">twitter@kyleangeles<br></span>
+                    <span class="text">instagram@kyleangeles<br></span>
+                    <span class="text">pinterest@kyleangeles<br></span>      
+                </div>
+
+                <div class="hobbies">
+                    <h3 class="hobby">
+                        <table style="background-color: white; width: 300px;">
+                            <tr>
+                                <td style="padding: 5px">HOBBIES</td>
+                            </tr>
+                        </table>
+                    </h3>
+                    <table style="width:300px">
+                        <tr>
+                            <td style="padding: 20px">
+                                <span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span>
+                                <span class="text">Coding<br></span>
+                            </td>
+                            <td style="padding: 20px">
+                                <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                                <span class="text">Studying<br></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="icon"><i class="fa fa-gamepad" aria-hidden="true"></i></span>
+                                <span class="text">Playing<br></span>
+                            </td>
+                            <td>
+                                <span class="icon"><i class="fa fa-microphone" aria-hidden="true"></i></span>
+                                <span class="text">Singing<br></span>
+                            </td>
+                        </tr>
+                    </table>       
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
